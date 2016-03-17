@@ -5,7 +5,7 @@ import yaml
 from subprocess import call
 import argparse
 
-BASE_DIR = '/home/alexp/Projects/pyenv-builder/'
+BASE_DIR = os.path.dirname(os.path.realpath(__file__))
 
 parser = argparse.ArgumentParser()
 parser.add_argument(

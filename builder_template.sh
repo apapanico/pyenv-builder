@@ -12,9 +12,7 @@ export PYENV_VIRTUALENV_DISABLE_PROMPT=1
 
 echo 'Setting pyenv local to {py_env}'
 pyenv local {py_env}
-
 pyenv activate {py_env}
-pyenv which pip
 
 echo 'Installing {requirement_list}'
 pip install --no-binary :all: {requirement_list}
